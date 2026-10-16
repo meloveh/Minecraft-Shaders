@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "opaqueDrawBuffers": [0],
+  "translucentDrawBuffers": [16],
+  "excludeLodsFromVanillaDepth": true,
+  "blending": {-1: "off"},//Is relative to the index inside the translucent draw buffers, you can do "off" to turn off blending, index -1 specifies the default blending op
+  "uniforms": ["viewWidth", "viewHeight", "aspectRatio", "isEyeInWater", "frameTimeCounter", "frameTime", "frameCounter", "fogColor", "skyColor", "cameraPosition", "entityColor", "worldTime", "rainStrength", "temperature", "sunPosition", "worldDay", "heldBlockLightValue", "darknessFactor", "darknessLightFactor", "blindness", "eyeBrightnessSmooth", "previousCameraPosition", "entityId", "nightVision", "sunAngleAtHome", "screenBrightness", "renderStage", "thunderStrength", "lightningBoltPosition", "hideGUI", 
+  #if MC_VERSION >= 12109
+  "endFlashIntensity", "endFlashPosition", 
+  #endif
+  "alphaTestRef", "gbufferProjectionInverse", "gbufferProjection", "gbufferModelView", "gbufferModelViewInverse", "gbufferPreviousModelView", "gbufferPreviousProjection", "shadowModelView", "shadowModelViewInverse", "shadowProjection", "shadowProjectionInverse", "near", "far", "timeAngle", "nightStrength", "dayStrength", "sunsetStrength", "sunriseStrength", "resolution", "resolutionInv", "sunOrMoonPosN", "sunPosN", "taaJitter", "isOutdoorsSmooth", "precipitationSmooth", "fogAmount", "vxProjInv", "vxProj", "vxProjPrev", "vxModelView", "vxModelViewInv", "vxModelViewPrev", "vxRenderDistance", "wetness", "rainbowStrength", "sunAngle"],
+  "taaOffset": "{
+    return taaJitter;
+  }",
+  "samplers": {
+    "gaux1": "sampler2D", 
+    "colortex5": "sampler2D",
+    "colortex6": "sampler3D", 
+    "depthtex0": "sampler2D", 
+    "depthtex1": "sampler2D", 
+    "noisetex": "sampler2D", 
+    "shadowtex0": "sampler2DShadow", 
+    "shadowcolor0": "sampler2D", 
+    "normals": "sampler2D", 
+    "specular": "sampler2D", 
+    "gtexture": "sampler2D",
+    "vxDepthTexTrans": "sampler2D",
+    "vxDepthTexOpaque": "sampler2D"
+  },//Auto mapped to sampler2D except for shadowtex0 which is mapped to sampler2DShadow
+//   "ssbos": {-1:"/*-1 is included before all other ssbo defines, use for setting up structs*/", 0:"{uint count; float data[];}"},//This field is optional
+  "opaquePatchData":"
+  #include "/program/voxy_terrain.glsl"
+",
+  "translucentPatchData":"
+    #include "/program/voxy_water.glsl"
+"
+}
