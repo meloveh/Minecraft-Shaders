@@ -62,3 +62,25 @@ The shader pack includes an in-game settings menu (Iris/OptiFine shader options)
 ## License
 
 This project is released under the **license**.
+
+
+
+---
+
+## Credits
+
+- Shader code: **Meloveh**
+- Testing and optimization: **Meloveh**
+- Inspired by the Minecraft shader community
+
+---
+
+## Links
+
+- Telegram: [t.me/meloveh](https://t.me/meloveh)
+- GitHub: [libmeloveh](https://github.com/libmeloveh)
+- VK: [vk.ru/libmeloveh](https://vk.ru/libmeloveh)
+
+---
+
+<sub>Meloveh (Dmitry Voronin) — one-man studio.</sub>
