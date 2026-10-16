@@ -14,6 +14,8 @@ A shader pack built for Minecraft 1.21.11. Focused on clean lighting, balanced p
 
 This is a solo project: code, shaders, testing, and optimization — all by one developer.
 
+![photo](image/2026-09-27_00.03.40.png)
+
 ---
 
 ## Features
