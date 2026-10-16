@@ -62,3 +62,24 @@
 ## Лицензия
 
 Проект распространяется под **license**.
+
+
+---
+
+## Благодарности
+
+- Код шейдеров: **Meloveh**
+- Тестирование и оптимизация: **Meloveh**
+- Вдохновлено сообществом Minecraft-шейдеров
+
+---
+
+## Ссылки
+
+- Telegram: [t.me/meloveh](https://t.me/meloveh)
+- GitHub: [libmeloveh](https://github.com/libmeloveh)
+- VK: [vk.ru/libmeloveh](https://vk.ru/libmeloveh)
+
+---
+
+<sub>Meloveh (Дмитрий Воронин) — one-man studio.</sub>
