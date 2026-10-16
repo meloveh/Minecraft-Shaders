@@ -61,4 +61,4 @@ The shader pack includes an in-game settings menu (Iris/OptiFine shader options)
 
 ## License
 
-This project is released under the **Unlicense** — public domain.
+This project is released under the **license**.
